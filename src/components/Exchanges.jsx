@@ -63,7 +63,7 @@ const ExchangeCard = ({ name, img, rank, url }) => (
       w={"52"}
       shadow={"lg"}
       p={"8"}
-      borderRadius={"lg"}
+      borderRadius={"2xl"}
       transition={"all 0.3s"}
       m={"4"}
       css={{
