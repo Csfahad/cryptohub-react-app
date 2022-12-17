@@ -4,17 +4,18 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <HStack p={"4"} shadow={"base"} bgColor={"blackAlpha.900"}>
-      <Button variant={"unstyled"} color={"white"}>
-        <Link to="/">Home</Link>
-      </Button>
-      <Button variant={"unstyled"} color={"white"}>
-        <Link to="/exchanges">Exchanges</Link>
-      </Button>
-      <Button variant={"unstyled"} color={"white"}>
-        <Link to="/coins">Coins</Link>
-      </Button>
-    </HStack>
+      <HStack p={"4"} shadow={"md"} justifyContent={['center', 'space-evenly']} width={'full'}>
+        
+        <Button variant={'ghost'}>
+          <Link to="/">Home</Link>
+        </Button>
+        <Button variant={"ghost"}>
+          <Link to="/exchanges">Exchanges</Link>
+        </Button>
+        <Button variant={'ghost'}>
+          <Link to="/coins">Coins</Link>
+        </Button>
+      </HStack>
   );
 };
 

@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 const CoinCard = ({ id, name, img, symbol, price, currencySymbol = "₹" }) => (
   <Link to={`/coin/${id}`}>
     <VStack
-      w={"52"}
-      shadow={"lg"}
+      w={'52'}
+      shadow={"xl"}
       p={"8"}
-      borderRadius={"lg"}
+      borderRadius={"2xl"}
       transition={"all 0.3s"}
       m={"4"}
       css={{
@@ -24,7 +24,7 @@ const CoinCard = ({ id, name, img, symbol, price, currencySymbol = "₹" }) => (
         objectFit={"contain"}
         alt={"Exchange"}
       />
-      <Heading size={"md"} noOfLines={1}>
+      <Heading size={"md"} noOfLines={1} textTransform={"uppercase"}>
         {symbol}
       </Heading>
 
