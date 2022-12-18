@@ -99,7 +99,7 @@ const CoinDetails = () => {
     fetchCoin();
   }, [params.id, currency, days]);
 
-  if (error) return <ErrorComponent message={"Error While Fetching Coin"} />;
+  if (error) return <ErrorComponent message={"Something went wrong, Please try again"} />;
 
   return (
     <Container maxW={"container.xl"}>
